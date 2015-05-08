@@ -1,0 +1,20 @@
+{
+  "name": "run",
+  "version": "1.0.0",
+  "description": "Spin up static webserver from any directory",
+  "main": "run.js",
+  "dependencies": {
+    "express": "^4.4.5",
+    "keypress": "^0.2.1",
+    "open": "0.0.5",
+    "portfinder": "^0.4.0"
+  },
+  "bin": {
+    "run": "./run.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reid Philpot",
+  "license": "ISC"
+}
