@@ -35,7 +35,7 @@ portfinder.getPort(function(err, port) {
 
   app.listen(port)
 
-  console.log('server started: ' + target)
+  console.log('Server started at ' + target)
   console.log('-----')
   console.log('ctrl + o to open browser')
   console.log('ctrl + c to exit')
