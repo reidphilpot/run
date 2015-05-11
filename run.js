@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-var path = require('path')
-  , express = require('express')
+var express = require('express')
   , keypress = require('keypress')
   , open = require('open')
   , portfinder = require('portfinder')
@@ -13,11 +12,9 @@ keypress(process.stdin)
 process.stdin.on('keypress', function (ch, key) {
   if (key && key.ctrl) {
     switch(key.name) {
-      case 'o':
-        open(target)
+      case 'o': open(target)
         break
-      case 'c':
-        process.exit(0)
+      case 'c': process.exit(0)
         break
     }
   }
@@ -30,7 +27,6 @@ portfinder.basePort = 3000
 app.use('/', express.static(process.cwd()))
 
 portfinder.getPort(function(err, port) {
-
   target = 'http://localhost:' + port
 
   app.listen(port)
@@ -40,5 +36,4 @@ portfinder.getPort(function(err, port) {
   console.log('ctrl + o to open browser')
   console.log('ctrl + c to exit')
   console.log('-----')
-
 })
