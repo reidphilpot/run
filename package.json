@@ -1,6 +1,6 @@
 {
   "name": "@reidphilpot/run",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Spin up a simple static webserver from any directory",
   "main": "run.js",
   "dependencies": {
@@ -12,9 +12,9 @@
   "bin": {
     "run": "./run.js"
   },
-  "repository": { 
-    "type" : "git",
-    "url" : "https://github.com/reidphilpot/run.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reidphilpot/run.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
