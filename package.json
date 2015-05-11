@@ -1,7 +1,7 @@
 {
-  "name": "run",
+  "name": "@reidphilpot/run",
   "version": "1.0.0",
-  "description": "Spin up static webserver from any directory",
+  "description": "Spin up a simple static webserver from any directory",
   "main": "run.js",
   "dependencies": {
     "express": "^4.4.5",

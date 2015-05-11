@@ -1,3 +1,7 @@
-# CLI for static webserver
+# Simple static webserver
 
-Install globally, cd into a directory and type 'run'
+npm install -g @reidphilpot/run
+
+cd /my/static/website
+
+run
