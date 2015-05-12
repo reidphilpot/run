@@ -11,7 +11,7 @@ keypress(process.stdin)
 
 process.stdin.on('keypress', function (ch, key) {
   if (key && key.ctrl) {
-    switch(key.name) {
+    switch (key.name) {
       case 'o': open(target)
         break
       case 'c': process.exit(0)
@@ -26,7 +26,7 @@ portfinder.basePort = 3000
 
 app.use('/', express.static(process.cwd()))
 
-portfinder.getPort(function(err, port) {
+portfinder.getPort(function (err, port) {
   target = 'http://localhost:' + port
 
   app.listen(port)
