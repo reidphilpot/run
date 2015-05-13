@@ -17,7 +17,7 @@
     "url": "https://github.com/reidphilpot/run.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "patch-release": "npm version patch && npm publish && git push --follow-tags"
   },
   "author": "Reid Philpot",
   "license": "ISC"
